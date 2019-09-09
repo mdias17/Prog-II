@@ -13,6 +13,17 @@ public class Ranger extends Personagem{
     
     public Ranger(String apelido){
         super(apelido);
+        this.apelido = apelido;
+        this.hp = 120;
+        this.xp = 1;
+        this.level = 1;
+        this.forca = 10;
+        this.acuracia = 30;
+        this.defesa = 10;
+        this.inteligencia = 15;
+        this.agilidade = 20;
+        this.mana = 10;
+        this.magia = 10;
     }
 
   @Override

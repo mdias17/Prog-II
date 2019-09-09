@@ -25,8 +25,6 @@ public abstract class Personagem {
     
     public Personagem(String apelido){
         this.apelido = apelido;
-        this.hp = 100; //Pode se definir tirando os argumentos acima
-        this.forca = 20;
         this.xp = 1;
         this.level = 1;
         
@@ -41,10 +39,13 @@ public abstract class Personagem {
 
     
     public void hello(){
-        System.out.println("Eu sou " + this.apelido);
-        System.out.println("Tenho "+this.hp+" pontos de HP");
-        System.out.println("Com "+this.forca+" de força.");
-        System.out.println("E level "+this.level+"("+this.xp+"-XP"+")");
+        System.out.println("-----DADOS------\n");
+        System.out.println("Nick: " + this.apelido);
+        System.out.println("HP: "+this.hp +"| MP: "+this.mana);
+        System.out.println("ATK: "+this.forca +"| DEF: "+this.defesa);
+        System.out.println("MAG: "+this.magia +"| INT: "+this.inteligencia);
+        System.out.println("AGI: "+this.agilidade+"| ACU: "+this.acuracia);
+        System.out.println("Level "+this.level+"("+this.xp+"-XP"+")");
         System.out.println("-------------------------\n");
     }
 }   
