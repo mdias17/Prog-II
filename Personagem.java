@@ -21,6 +21,7 @@ public abstract class Personagem {
     int magia;
     int defesa;
     int agilidade;
+    int mana;
     
     public Personagem(String apelido){
         this.apelido = apelido;
